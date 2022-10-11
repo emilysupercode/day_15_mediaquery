@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'RockSalt-Regular';
+    src: url("../fonts/RockSalt-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Nunito-Medium';
+    src: url("../fonts/Nunito-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Nunito-ExtraBold';
+    src: url("../fonts/Nunito-ExtraBold.ttf");
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Nunito-Medium', sans-serif;
+}
+
+h1 {
+    font-family: 'RockSalt-Regular', serif;
+}
+
+/* MOBILE-FIRST */
+
+/* ======================================
+        HEADER STYLES
+======================================  */
+
+header h1 {
+    text-align: center;
+    padding: 2vh auto;
+    font-size: 1.7rem;
+}
+
+header div h2 {
+    padding: 3vh 2vw 0 0;
+    text-align: right;
+    color: #df8480;
+    font-size: 1.5rem;
+}
+
+#header__bg__large {
+    height: 300px;
+}
+
+#header__bg__small {
+    background-image: url("../img/dog_catching_snack.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* ======================================
+        MAIN STYLES
+======================================  */
+
+main div h2 {
+    background-color: #df8480;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2vh;
+}
+
+#how__it__works section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.4rem;
+}
+
+main div#menu section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+main h3 {
+    font-size: 1.4rem;
+}
+
+article.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 2vh;
+}
+
+.numeral {
+    color: #df8480;
+    font-size: 3rem;
+    font-family: 'Nunito-ExtraBold', sans-serif;
+}
+
+main div#menu section article.article1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+main div#menu section article.article2 {
+    background: url("../img/dog_bowl.png") no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main div#menu section article.article2 h3 {
+    width: 40%;
+    padding: 30px 10px;
+}
+
+main div#menu section article.article2 h3:nth-of-type(2) {
+    padding-left: 350px;
+}
+
+main div#menu section article.article3 {
+    padding: 1vh;
+}
+
+/* ======================================
+        FOOTER STYLES
+======================================  */
+
+footer {
+    background-color: #242424;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+}
+
+#footer__signup {
+    padding: 1vh;
+}
+
+#footer__signup__text {
+    color: white;
+    text-align: center;
+    padding: 0 2vw 1vh 2vw;
+}
+
+#footer__signup__email,
+#footer__signup__button {
+    text-align: center;
+    width: 300px;
+    padding: 10px 30px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+#footer__signup__email {
+    color: gray;
+    background-color: white;
+}
+
+#footer__signup__button {
+    color: white;
+    background-color: #df8480;
+}
+
+#footer__links {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1vh;
+}
+
+#footer__links div.social__media {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 0;
+    width: 300px;
+}
+
+footer div p {
+    padding-right: 10px;
+}
+
+
+/* ======================================
+        MEDIUM SCREEN STYLES
+======================================  */
+
+@media only screen and (min-width: 601px) {
+    main div#how__it__works section {
+        padding: 0 5vw;
+    }
+
+    main div section article.top {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    main div section article div p {
+        padding-left: 5vw;
+    }
+
+    main div#menu section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    main div#menu section article.article1 {
+        width: 50%;
+    }
+
+    main div#menu section article.article1 img {
+        width: 100%;
+        height: 300px;
+    }
+
+    main div#menu section article.article2 {
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div#menu section article.article2 h3:nth-of-type(2) {
+        padding-left: 220px;
+    }
+
+    main div#menu section article.article3 {
+        color: black;
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+
+    #footer__links {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 1vh;
+    }
+
+    #footer__links div.social__media {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        margin-left: 2vw;
+    }
+}
+
+/* ======================================
+        LARGE SCREEN STYLES
+======================================  */
+
+@media only screen and (min-width: 901px) {
+    #header__bg__small {
+        background-image: none;
+    }
+
+    header h1 {
+        padding: 2vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header__flexbox {
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+    }
+
+    #header__div__left {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #df8480;
+        width: 50%;
+    }
+
+    #header__div__left h2 {
+        padding: 1.5vh;
+        font-size: 3rem;
+        width: 35%;
+        color: white;
+    }
+
+    #header__bg__large {
+        background: url("../img/dog_catching_snack.jpg") no-repeat center;
+        background-size: cover;
+        width: 50%;
+        height: 600px;
+    }
+
+    #how__it__works h2,
+    #menu h2 {
+        background-color: white;
+        color: #df8480;
+        font-size: 5rem;
+    }
+
+    #how__it__works section {
+        display: flex;
+        flex-direction: row;
+        margin: 2vh 2%;
+        padding: 0 2%;
+    }
+
+    main div section article.top {
+        border-radius: 5px;
+        box-shadow: 0 5px 5px gray;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    main div section article.top p {
+        padding: 2vh;
+        margin: 0;
+    }
+
+    main div section article.top:nth-of-type(3) p {
+        padding: 2vh 2vh 0 2vh;
+    }
+
+    main div#menu section {
+        flex-wrap: nowrap;
+        margin: 1vh;
+    }
+
+    main div#menu section article {
+        width: 30%;
+        height: 300px;
+    }
+
+    main div#menu section article.article1 {
+        width: 30%;
+    }
+
+    main div#menu section article.article1 img {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    main div#menu section article.article2 {
+        width: 30%;
+    }
+
+    main div#menu section article.article3 {
+        background-color: #df8480;
+        border-radius: 10px;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main div#menu section article.article3 p {
+        width: 100%;
+        color: white;
+    }
+}
+
+/*======================================
+        XL SCREEN STYLES
+====================================== */
+
+@media only screen and (min-width: 1201px) {
+
+    main div section article.top {
+        padding: 5vh;
+        margin: 5vh;
+    }
+
+    #menu section {
+        padding: 0 5vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
